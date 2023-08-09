@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TestController!{% endblock %}
+
+{% block body %}
+<div id="app">
+</div>
+{% endblock %}
+{% block javascripts %}
+	<script type="text/javascript">
+		window.test_api = "{{ path('test_api') }}";
+	</script>
+{% endblock %}
